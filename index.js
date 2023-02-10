@@ -1,9 +1,15 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const db = require("@cyclic.sh/dynamodb");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const corsOptions = {
+  origin: "http://example.com",
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 
 // #############################################################################
 // This configures static hosting for files in /public that have the extensions
@@ -20,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 // #############################################################################
 
 // Create or Update an item
-app.post("/:col/:key", async (req, res) => {
+app.post("/:col/:key", cors(corsOptions), async (req, res) => {
   console.log(req.body);
 
   const col = req.params.col;
@@ -32,7 +38,7 @@ app.post("/:col/:key", async (req, res) => {
 });
 
 // Delete an item
-app.delete("/:col/:key", async (req, res) => {
+app.delete("/:col/:key", cors(corsOptions), async (req, res) => {
   const col = req.params.col;
   const key = req.params.key;
   console.log(`from collection: ${col} delete key: ${key} with params ${JSON.stringify(req.params)}`);
@@ -42,7 +48,7 @@ app.delete("/:col/:key", async (req, res) => {
 });
 
 // Get a single item
-app.get("/:col/:key", async (req, res) => {
+app.get("/:col/:key", cors(corsOptions), async (req, res) => {
   const col = req.params.col;
   const key = req.params.key;
   console.log(`from collection: ${col} get key: ${key} with params ${JSON.stringify(req.params)}`);
@@ -52,7 +58,7 @@ app.get("/:col/:key", async (req, res) => {
 });
 
 // Get a full listing
-app.get("/:col", async (req, res) => {
+app.get("/:col", cors(corsOptions), async (req, res) => {
   const col = req.params.col;
   console.log(`list collection: ${col} with params: ${JSON.stringify(req.params)}`);
   const items = await db.collection(col).list();
@@ -61,7 +67,7 @@ app.get("/:col", async (req, res) => {
 });
 
 // Catch all handler for all other request.
-app.use("*", (req, res) => {
+app.use("*", cors(corsOptions), (req, res) => {
   res.json({ msg: "no route handler found" }).end();
 });
 
