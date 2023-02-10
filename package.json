@@ -1,22 +1,27 @@
 {
-  "name": "starter-rest-api",
+  "name": "siduru.com",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "env-cmd nodemon index.js",
-    "repl": "env-cmd node"
+    "start": "nodemon ./bin/www -e js,html"
   },
-  "keywords": [],
-  "author": "Kam Lasater <kam.lasater@cyclic.sh>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyclic-software/starter-express-api.git"
+  },
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.16"
+  "bugs": {
+    "url": "https://github.com/cyclic-software/starter-express-api/issues"
   },
+  "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
-    "@cyclic.sh/dynamodb": "^0.0.33",
-    "cors": "^2.8.5",
-    "env-cmd": "^10.1.0",
-    "express": "^4.18.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

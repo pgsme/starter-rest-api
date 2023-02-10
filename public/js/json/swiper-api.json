@@ -1,0 +1,124 @@
+{
+  "swiper": [
+    {
+      "title": "go to next slide at a given speed",
+      "body": "mySwiper.slideNext(speed, runCallbacks)"
+    },
+    {
+      "title": "back to previous slide at a given speed",
+      "body": "mySwiper.slidePrev(speed, runCallbacks)"
+    },
+    {
+      "title": "slide to a specific slide at a given speed",
+      "body": "mySwiper.slideTo(index, speed, runCallbacks)"
+    },
+    {
+      "title": "Does the same as .slideTo but for the case when used with enabled loop.",
+      "body": "mySwiper.slideToLoop(index, speed, runCallbacks)"
+    },
+    {
+      "title": "Reset swiper position to currently active slide",
+      "body": "mySwiper.slideReset(speed, runCallbacks)"
+    },
+    {
+      "title": "Reset swiper position to closest slide/snap point",
+      "body": "mySwiper.slideToClosest(speed, runCallbacks)"
+    },
+    {
+      "title": "Update height",
+      "body": "mySwiper.updateAutoHeight(speed)"
+    },
+    {
+      "title": "Update swiper",
+      "body": "mySwiper.update()"
+    },
+    {
+      "title": "Changes slider direction from horizontal to vertical and back.",
+      "body": "mySwiper.changeDirection(direction)"
+    },
+    {
+      "title": "update size",
+      "body": "mySwiper.updateSize()"
+    },
+    {
+      "title": "update slides",
+      "body": "mySwiper.updateSlides()"
+    },
+    {
+      "title": "update progress",
+      "body": "mySwiper.updateProgress()"
+    },
+    {
+      "title": "update classes",
+      "body": "mySwiper.updateSlidesClasses()"
+    },
+    {
+      "title": "detach all event listeners",
+      "body": "mySwiper.detachEvents()"
+    },
+    {
+      "title": "attach all event listeners",
+      "body": "mySwiper.attachEvents()"
+    },
+    {
+      "title": "destroy the swiper instance",
+      "body": "mySwiper.destroy(deleteInstance, cleanStyles)"
+    },
+    {
+      "title": "append new slides to the slider",
+      "body": "mySwiper.appendSlide(slides)"
+    },
+    {
+      "title": "prepend new slides to the slider",
+      "body": "mySwiper.prependSlide(slides)"
+    },
+    {
+      "title": "add new slides",
+      "body": "mySwiper.addSlide(index, slides)"
+    },
+    {
+      "title": "remove a slide",
+      "body": "mySwiper.removeSlide(slideIndex)"
+    },
+    {
+      "title": "remove all slides",
+      "body": "mySwiper.removeAllSlides()"
+    },
+    {
+      "title": "set custom CSS transforms",
+      "body": "mySwiper.setTranslate(translate)"
+    },
+    {
+      "title": "animate custom css3 transform's translate value for swiper wrapper",
+      "body": "mySwiper.translateTo(translate, speed, runCallbacks, translateBounds)"
+    },
+    {
+      "title": "get the current transform value",
+      "body": "mySwiper.getTranslate()"
+    },
+    {
+      "title": "add event listener",
+      "body": "mySwiper.on(event, handler)"
+    },
+    {
+      "title": "that will be executed only once",
+      "body": "mySwiper.once(event, handler)"
+    },
+    {
+      "title": "remove event listener for specified event",
+      "body": "mySwiper.off(event, handler)"
+    },
+    {
+      "title": "remove all listeners",
+      "body": "mySwiper.off(event)"
+    },
+    {
+      "title": "unset grab cursor",
+      "body": "mySwiper.unsetGrabCursor()"
+    },
+    {
+      "title": "set grab cursor",
+      "body": "mySwiper.setGrabCursor()"
+    }
+  ]
+}

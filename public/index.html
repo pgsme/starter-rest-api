@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karim Roy</title>
+  <!-- Search Engine -->
+  <meta name="description" content="30 Hari Belajar Javascript & Firebase">
+  <meta name="image" content="">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Karim Roy">
+  <meta itemprop="description" content="30 Hari Belajar Javascript & Firebase">
+  <meta itemprop="image" content="">
+  <!-- Open Graph general (Facebook, Pinterest & LinkedIn) -->
+  <meta property="og:title" content="Karim Roy">
+  <meta property="og:description" content="30 Hari Belajar Javascript & Firebase">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://karim-roy.web.app/">
+  <meta property="og:site_name" content="Karim Roy">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="Karim Roy">
+  <meta property="twitter:description" content="30 Hari Belajar Javascript & Firebase">
+  <meta property="twitter:image:src" content="">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Initialization -->
+  <script src="js/firebase/init.min.js" type="module"></script>
+  <link rel="stylesheet" href="css/module.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+    .text-brand {
+      font-family: 'Nabla', cursive;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-header border">
+    <div class='container position-relative d-flex justify-content-between align-items-center flex-row h-100'>
+      <a data-button-nav="home">
+        <i data-back-button class="fa-thin fa-angle-left fa-2x d-none pe-none"></i>
+      </a>
+      <span class="text-brand">Karim Roy</span>
+      <a data-button-nav="settings" class="">
+        <i data-settings-button class="fa-thin fa-gear fa-2x pe-none"></i>
+      </a>
+    </div>
+  </div>
+  <div data-main class='swiper main-body'>
+    <div class='swiper-wrapper'>
+      <div data-history='home' class='swiper-slide'>
+        <div class='container d-flex justify-content-end align-items-center flex-column h-100'>
+          <div data-top-news class='swiper h-100'>
+            <div class='swiper-wrapper'>
+              <div class='swiper-slide border border-muted rounded-3'>
+                <div class='container d-flex justify-content-center align-items-center flex-column text-xs'>
+                  <div class="h5">What is Lorem Ipsum?</div>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                  popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently with desktop publishing software like Aldus PageMaker including versions of
+                  Lorem Ipsum.
+                </div>
+              </div>
+              <div class='swiper-slide border border-muted rounded-3'>
+                <div class='container d-flex justify-content-center align-items-center flex-column text-xs'>
+                  <div class="h5">What is Lorem Ipsum?</div>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                  popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently with desktop publishing software like Aldus PageMaker including versions of
+                  Lorem Ipsum.
+                </div>
+              </div>
+              <div class='swiper-slide border border-muted rounded-3'>
+                <div class='container d-flex justify-content-center align-items-center flex-column text-xs'>
+                  <div class="h5">What is Lorem Ipsum?</div>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                  popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently with desktop publishing software like Aldus PageMaker including versions of
+                  Lorem Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-around align-items-center w-100">
+            <a data-button-nav="news" class="text-center"><i class="fa-thin fa-newspaper text-danger fa-2x"></i>
+              <div class="text-muted text-sm">News</div>
+            </a>
+            <a data-button-nav="travel" class="text-center"><i class="fa-thin fa-backpack text-warning fa-2x"></i>
+              <div class="text-muted text-sm">Travel</div>
+            </a>
+            <a data-button-nav="shop" class="text-center"><i class="fa-thin fa-shop text-success fa-2x"></i>
+              <div class="text-muted text-sm">Shop</div>
+            </a>
+          </div>
+          <div class="d-flex flex-row justify-content-around align-items-center w-100">
+            <a data-button-nav="ticket" class="text-center"><i class="fa-thin fa-ticket-airline text-primary fa-2x"></i>
+              <div class="text-muted text-sm">Ticket</div>
+            </a>
+            <a data-button-nav="gallery" class="text-center"><i class="fa-thin fa-images text-info fa-2x"></i>
+              <div class="text-muted text-sm">Gallery</div>
+            </a>
+            <a data-button-nav="code" class="text-center"><i class="fa-thin fa-input-numeric text-muted fa-2x"></i>
+              <div class="text-muted text-sm">Code</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div data-history='news' class='swiper-slide'>
+        <div class='container d-flex justify-content-center align-items-center flex-column'>
+          News
+        </div>
+      </div>
+      <div data-history='travel' class='swiper-slide'>
+        <div class='container d-flex justify-content-center align-items-center flex-column'>
+          Travel
+        </div>
+      </div>
+      <div data-history='shop' class='swiper-slide'>
+        <div class='container d-flex justify-content-center align-items-center flex-column'>
+          Shop
+        </div>
+      </div>
+      <div data-history='ticket' class='swiper-slide'>
+        <div class='container d-flex justify-content-center align-items-center flex-column'>
+          Ticket
+        </div>
+      </div>
+      <div data-history='gallery' class='swiper-slide'>
+        <div class='container d-flex justify-content-center align-items-center flex-column'>
+          Gallery
+        </div>
+      </div>
+      <div data-history='code' class='swiper-slide'>
+        <div class='container d-flex justify-content-start align-items-center flex-column h-100 mt-3'>
+          <form data-form-snippets class="w-100">
+            <input class="form-control mb-3" data-input-prefix type="text" name="prefix" id="prefix"
+              placeholder="Prefix">
+            <input class="form-control mb-3" data-input-type type="text" name="type" id="type" placeholder="Type">
+            <input class="form-control mb-3" data-input-title type="text" name="title" id="title" placeholder="Title">
+            <button class="btn btn-sm btn-secondary float-start" data-button-read>read</button>
+            <button class="btn btn-sm btn-primary float-end" data-button-submit>Send</button>
+          </form>
+        </div>
+      </div>
+      <div data-history='settings' class='swiper-slide'>
+        <div class='container d-flex justify-content-center align-items-center flex-column'>
+          Settings
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer border">
+
+  </div>
+</body>
+
+<script src="js/core.min.js" type="text/javascript"></script>
+<script src="js/module.min.js" type="text/javascript"></script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script src="js/pages/index.min.js" type="module" defer></script>
+<script>
+
+</script>
+
+</html>

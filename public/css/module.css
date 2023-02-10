@@ -1,0 +1,87 @@
+@import url(./all.min.css);
+@import url(./core.css);
+@import url(./swiper.min.css);
+@import url(./firebasejs/ui/6.0.1/firebase-ui-auth.css);
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-size: 14px; */
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-header {
+  /* min-height: 50px;
+  max-height: 50px; */
+  height: 60px;
+  background: #fff;
+  /* border-radius: 0px 0px 10px 10px; */
+}
+
+.main-body {
+  /* top: 200px; */
+  /* margin-top: 50px; */
+  height: calc(100vh - 120px);
+  width: 100%;
+}
+
+.main-footer {
+  /* min-height: 50px;
+  max-height: 50px; */
+  height: 60px;
+  background: #fff;
+  /* border-radius: 10px 10px 0px 0px; */
+}
+
+.text-sm {
+  font-size: small;
+}
+.text-smr {
+  font-size: smaller;
+}
+.text-xs {
+  font-size: x-small;
+}
+.text-xxs {
+  font-size: xx-small;
+}

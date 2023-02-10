@@ -1,0 +1,725 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/core.min.css">
+  <!-- PRISM -->
+  <link rel="stylesheet" href="css/new-prism.css">
+  <!-- Custom styles -->
+  <style>
+    .navbar-scroll .navbar-brand {
+      color: #fff;
+    }
+
+    .navbar-scrolled .navbar-brand {
+      color: #4f4f4f;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <style>
+    INPUT:-webkit-autofill,
+    SELECT:-webkit-autofill,
+    TEXTAREA:-webkit-autofill {
+      animation-name: onautofillstart
+    }
+
+    INPUT:not(:-webkit-autofill),
+    SELECT:not(:-webkit-autofill),
+    TEXTAREA:not(:-webkit-autofill) {
+      animation-name: onautofillcancel
+    }
+
+    @keyframes onautofillstart {
+      from {}
+    }
+
+    @keyframes onautofillcancel {
+      from {}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+      <div class="container">
+        <a class="navbar-brand" href="#!">Brand</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#!">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Opinions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item mr-3 mr-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item mr-3 mr-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item mr-3 mr-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!--Section: Design Block-->
+    <section>
+      <!-- Intro -->
+      <div id="intro" class="text-center bg-image" style="
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg');
+            height: 100vh;
+          ">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100 mt-4">
+            <div class="text-white">
+              <h1 class="display-1 font-weight-bold text-uppercase mb-0">Travel</h1>
+              <h4 class="font-weight-light pt-1 mt-4 mb-5">Joy of discovering</h4>
+              <button class="btn btn-light btn-lg">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Intro -->
+    </section>
+    <!--Section: Design Block-->
+  </header>
+
+  <main>
+    <div class="container my-5">
+      <!--Section: Design Block-->
+      <section>
+        <h3 class="text-center mb-5">Where do you want to go?</h3>
+
+        <p class="text-center mb-5 mx-auto w-responsive">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum animi doloremque
+          nam dicta veniam dolor ea nostrum excepturi laboriosam molestiae, expedita odit id! Sunt
+          quia cumque consequatur perferendis hic.
+        </p>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-outline mb-4 mb-lg-0">
+              <input type="text" id="destination" class="form-control">
+              <label class="form-label" for="destination" style="margin-left: 0px;">Destination, Country</label>
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px;"></div>
+                <div class="form-notch-middle" style="width: 123.2px;"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-outline datepicker mb-4 mb-lg-0" data-toggle-button="false">
+              <input type="text" class="form-control" id="exampleDatepicker1" data-toggle="datepicker">
+              <label for="exampleDatepicker1" class="form-label" style="margin-left: 0px;">From</label>
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px;"></div>
+                <div class="form-notch-middle" style="width: 37.6px;"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-outline datepicker mb-4 mb-lg-0" data-toggle-button="false">
+              <input type="text" class="form-control" id="exampleDatepicker2" data-toggle="datepicker">
+              <label for="exampleDatepicker2" class="form-label" style="margin-left: 0px;">To</label>
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px;"></div>
+                <div class="form-notch-middle" style="width: 22.4px;"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <button class="btn btn-primary btn-block">Search</button>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+
+      <hr class="my-5">
+
+      <!--Section: Design Block-->
+      <section class="text-center">
+        <h3 class="mb-5">Explore destination</h3>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-md-0 pb-2">
+            <div class="card">
+              <div class="bg-image">
+                <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="card-img-top"
+                  alt="Sample image">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Tatra mountain</h5>
+                <p class="small">
+                  Hotel:
+                  <i class="fas fa-star fa-sm text-primary ml-2"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                </p>
+                <p class="small">
+                  Price:
+                  <strong class="text-primary">$350.00</strong>
+                </p>
+                <p class="small">
+                  Duration:
+                  <strong>10 days</strong>
+                </p>
+                <p class="small">
+                  Person:
+                  <strong>3</strong>
+                </p>
+                <hr class="mt-3 mb-4">
+                <a class="btn btn-primary btn-sm stretched-link mb-2">Book a room</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 pb-2">
+            <div class="card">
+              <div class="bg-image">
+                <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="card-img-top"
+                  alt="Sample image">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Greece</h5>
+                <p class="small">
+                  Hotel:
+                  <i class="fas fa-star fa-sm text-primary ml-2"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                </p>
+                <p class="small">
+                  Price:
+                  <strong class="text-primary">$350.00</strong>
+                </p>
+                <p class="small">
+                  Duration:
+                  <strong>6 days</strong>
+                </p>
+                <p class="small">
+                  Person:
+                  <strong>2</strong>
+                </p>
+                <hr class="mt-3 mb-4">
+                <a class="btn btn-primary btn-sm stretched-link mb-2">Book a room</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 pb-2">
+            <div class="card">
+              <div class="bg-image">
+                <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="card-img-top"
+                  alt="Sample image">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Icleand</h5>
+                <p class="small">
+                  Hotel:
+                  <i class="fas fa-star fa-sm text-primary ml-2"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                </p>
+                <p class="small">
+                  Price:
+                  <strong class="text-primary">$350.00</strong>
+                </p>
+                <p class="small">
+                  Duration:
+                  <strong>8 days</strong>
+                </p>
+                <p class="small">
+                  Person:
+                  <strong>2</strong>
+                </p>
+                <hr class="mt-3 mb-4">
+                <a class="btn btn-primary btn-sm stretched-link mb-2">Book a room</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pb-2">
+            <div class="card">
+              <div class="bg-image">
+                <img src="https://mdbootstrap.com/img/Photos/Others/images/25.jpg" class="card-img-top"
+                  alt="Sample image">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center my-3">Italy</h5>
+                <p class="small">
+                  Hotel:
+                  <i class="fas fa-star fa-sm text-primary ml-2"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                  <i class="fas fa-star fa-sm text-primary"></i>
+                </p>
+                <p class="small">
+                  Price:
+                  <strong class="text-primary">$350.00</strong>
+                </p>
+                <p class="small">
+                  Duration:
+                  <strong>10 days</strong>
+                </p>
+                <p class="small">
+                  Person:
+                  <strong>3</strong>
+                </p>
+                <hr class="mt-3 mb-4">
+                <a class="btn btn-primary btn-sm stretched-link mb-2">Book a room</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+    </div>
+
+    <!--Section: Design Block-->
+    <section>
+      <div class="bg-image bg-fixed text-center" style="
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg');
+            height: 460px;
+          ">
+        <div class="d-flex align-items-center h-100 mask" style="background-color: rgba(0, 0, 0, 0.3);">
+          <div class="container text-white">
+            <p class="h1 mb-5">Some facts about us</p>
+            <div class="row">
+              <div class="col-md-3">
+                <h2 class="h1">+950</h2>
+                <p class="mb-md-0">Happy clients</p>
+              </div>
+              <div class="col-md-3">
+                <h2 class="h1">+150</h2>
+                <p class="mb-md-0">Projects completed</p>
+              </div>
+              <div class="col-md-3">
+                <h2 class="h1">+85</h2>
+                <p class="mb-md-0">Destinations</p>
+              </div>
+              <div class="col-md-3">
+                <h2 class="h1">+246</h2>
+                <p class="mb-0">Country visited</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Design Block-->
+
+    <div class="container my-5">
+      <!--Section: Design Block-->
+      <section>
+        <h3 class="text-center mb-5">Photos from our travels</h3>
+
+        <div class="lightbox" data-id="lightbox-hkiyph05j">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/50.jpg"
+                data-img="https://mdbootstrap.com/img/Photos/Others/images/50.jpg" alt="Lightbox image 1"
+                class="w-100 mb-4">
+              <img src="https://mdbootstrap.com/img/Photos/Vertical/6.jpg"
+                data-img="https://mdbootstrap.com/img/Photos/Vertical/6.jpg" alt="Lightbox image 2" class="w-100 mb-4">
+            </div>
+            <div class="col-lg-4">
+              <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
+                data-img="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Lightbox image 3"
+                class="w-100 mb-4">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg"
+                data-img="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" alt="Lightbox image 4"
+                class="w-100 mb-4">
+            </div>
+            <div class="col-lg-4">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/31.jpg"
+                data-img="https://mdbootstrap.com/img/Photos/Others/images/31.jpg" alt="Lightbox image 5"
+                class="w-100 mb-4">
+              <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
+                data-img="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Lightbox image 6"
+                class="w-100 mb-4">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+
+      <hr class="my-5">
+
+      <!--Section: Design Block-->
+      <section>
+        <h3 class="text-center mb-5">Choose your destination</h3>
+
+        <div class="row mb-5">
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">Italy</h6>
+            <p>
+              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
+              non felis.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">Greece</h6>
+            <p>
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+              elit lectus.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">Iceland</h6>
+            <p>
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+              elit lectus.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">USA</h6>
+            <p>
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+              elit lectus.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">Australia</h6>
+            <p>
+              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
+              non felis.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">Egypt</h6>
+            <p>
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+              elit lectus.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">Brasil</h6>
+            <p>
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+              elit lectus.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="font-weight-bold mb-3">France</h6>
+            <p>
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+              elit lectus.
+            </p>
+            <a href="#!" class="font-weight-bold">read more
+              <i class="fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--Section: Design Block-->
+    </div>
+
+    <!--Section: Design Block-->
+    <section>
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="bg-image hover-overlay">
+            <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100">
+            <div class="mask d-flex justify-content-center align-items-center text-center h-100"
+              style="background-color: rgba(33, 150, 243, 0.7);">
+              <p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-image hover-overlay">
+            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="w-100">
+            <div class="mask d-flex justify-content-center align-items-center text-center h-100"
+              style="background-color: rgba(33, 150, 243, 0.7);">
+              <p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-image hover-overlay">
+            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="w-100">
+            <div class="mask d-flex justify-content-center align-items-center text-center h-100"
+              style="background-color: rgba(33, 150, 243, 0.7);">
+              <p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-image hover-overlay">
+            <img src="https://mdbootstrap.com/img/Photos/Others/images/23.jpg" class="w-100">
+            <div class="mask d-flex justify-content-center align-items-center text-center h-100"
+              style="background-color: rgba(33, 150, 243, 0.7);">
+              <p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Design Block-->
+
+    <div class="container my-5">
+      <!--Section: Design Block-->
+      <section>
+        <h3 class="text-center mb-5">Contact us</h3>
+
+        <p class="text-center mb-5 mx-auto w-responsive">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum animi doloremque
+          nam dicta veniam dolor ea nostrum excepturi laboriosam molestiae, expedita odit id! Sunt
+          quia cumque consequatur perferendis hic.
+        </p>
+
+        <form>
+          <div class="row">
+            <div class="col-md-8 col-lg-9">
+              <div class="row mb-4">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control">
+                    <label class="form-label" for="form3Example1" style="margin-left: 0px;">First name</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 68.8px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <input type="email" id="form3Example2" class="form-control">
+                    <label class="form-label" for="form3Example2" style="margin-left: 0px;">Email Address</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 89.6px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example11" class="form-control">
+                    <label class="form-label" for="form3Example11" style="margin-left: 0px;">Phone</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 44px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-outline">
+                    <input type="email" id="form3Example22" class="form-control">
+                    <label class="form-label" for="form3Example22" style="margin-left: 0px;">Company</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 62.4px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3" style="margin-left: 0px;">Message</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px;"></div>
+                  <div class="form-notch-middle" style="width: 60px;"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
+              <div class="text-center text-md-left">
+                <button type="submit" class="btn btn-primary mb-5 mb-md-0">
+                  Send<i class="far fa-paper-plane ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <ul class="list-unstyled text-center text-md-left">
+                <li>
+                  <p>
+                    <i class="fas fa-map-marker-alt text-primary mr-2"></i>New York, NY 10012, USA
+                  </p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone text-primary mr-2"></i>+ 01 234 567 89</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope text-primary mr-2"></i>contact@gmail.com</p>
+                </li>
+              </ul>
+              <hr class="my-4">
+              <ul class="list-inline text-center list-unstyled">
+                <li class="list-inline-item">
+                  <a class="p2 fa-lg tw-ic">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="p2 fa-lg li-ic">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="p2 fa-lg ins-ic">
+                    <i class="fab fa-instagram"> </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!--Section: Design Block-->
+    </div>
+  </main>
+
+  <footer class="bg-primary text-white text-center text-lg-left">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/core.min.js"></script>
+  <!-- MDB SNIPPET -->
+  <script type="text/javascript" src="js/module.min.js"></script>
+  <!-- PRISM -->
+  <script type="text/javascript" src="js/new-prism.js"></script>
+
+
+
+</body>
+
+</html>

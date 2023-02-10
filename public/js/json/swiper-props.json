@@ -1,0 +1,29 @@
+{
+  "swiper": [
+    { "title": "params", "body": "mySwiper.params" },
+    { "title": "el", "body": "mySwiper.$el" },
+    { "title": "wrapperEl", "body": "mySwiper.$wrapperEl" },
+    { "title": "slides", "body": "mySwiper.slides" },
+    { "title": "width", "body": "mySwiper.width" },
+    { "title": "height", "body": "mySwiper.height" },
+    { "title": "translate", "body": "mySwiper.translate" },
+    { "title": "progress", "body": "mySwiper.progress" },
+    { "title": "activeIndex ", "body": "mySwiper.activeIndex" },
+    { "title": "realIndex ", "body": "mySwiper.realIndex" },
+    { "title": "previousIndex", "body": "mySwiper.previousIndex" },
+    { "title": "isBeginning", "body": "mySwiper.isBeginning" },
+    { "title": "isEnd", "body": "mySwiper.isEnd" },
+    { "title": "animating", "body": "mySwiper.animating" },
+    { "title": "touches", "body": "mySwiper.touches" },
+    { "title": "touches.startX", "body": "mySwiper.touches.startX" },
+    { "title": "touches.startY", "body": "mySwiper.touches.startY" },
+    { "title": "touches.currentX", "body": "mySwiper.touches.currentX" },
+    { "title": "touches.currentY", "body": "mySwiper.touches.currentY" },
+    { "title": "touches.diff", "body": "mySwiper.touches.diff" },
+    { "title": "clickedIndex", "body": "mySwiper.clickedIndex" },
+    { "title": "clickedSlide", "body": "mySwiper.clickedSlide" },
+    { "title": "allowSlideNext", "body": "mySwiper.allowSlideNext" },
+    { "title": "allowSlidePrev", "body": "mySwiper.allowSlidePrev" },
+    { "title": "allowTouchMove", "body": "mySwiper.allowTouchMove" }
+  ]
+}
